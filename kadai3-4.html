@@ -38,6 +38,9 @@
 
             // 商品購入の関数
             function buyItem(no) {
+
+                const item = items[no - 1];
+                console.log("商品番号: " + item.id + ", 商品名: " + item.name + "を購入します。");
                 // ここにコードを書く
                 showItemList(); // 商品一覧の表示関数呼び出し
             }
