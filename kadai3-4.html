@@ -41,6 +41,11 @@
 
                 const item = items[no - 1];
                 console.log("商品番号: " + item.id + ", 商品名: " + item.name + "を購入します。");
+                if (item.stock > 0) {
+                    item.stock--; 
+                } else {
+                    console.log("在庫がありません。");
+                }
                 // ここにコードを書く
                 showItemList(); // 商品一覧の表示関数呼び出し
             }
